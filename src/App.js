@@ -5,6 +5,9 @@ import styled from 'styled-components';
 
 // components
 import Skills from "./components/Skills";
+import GitHub from "./components/GitHub";
+import Home from "./components/Home";
+import Nav from "./components/Nav";
 
 const Container = styled.div`
   width: 100%;
@@ -14,16 +17,27 @@ const Container = styled.div`
 
   .main-content {
     font-size: 1.4rem;
-    padding: 5rem;
     margin: 5% 0;
     width: 75%;
     background: #2b2b94;
     border-radius: 0.5rem;
-    height: 80vh;
+    min-height: 80vh;
     border: 1px solid #1b1b5e;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+
+    .navigation {
+      background: #363636;
+      width: 25%;
+      border-top-left-radius: 0.5rem;
+      border-right: 1px solid #303030;
+      border-left: 1px solid #303030;
+    }
+
+    .routing {
+      padding: 4rem 5rem;
+      width: 75%;
+      border-top-right-radius: 0.5rem;
+    }
   }
 `;
 
@@ -31,10 +45,20 @@ function App() {
   return (
     <Container>
       <div className="main-content">
-        <h2>Let's render our content here.</h2>
-        <Route path="/skills">
-          <Skills />
-        </Route>
+        <div className="navigation">
+          <Nav />
+        </div>
+        <div class="routing">
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/skills">
+            <Skills />
+          </Route>
+          <Route path="/github">
+            <GitHub />
+          </Route>
+        </div>
       </div>
     </Container>
   );
