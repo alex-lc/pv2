@@ -32,6 +32,7 @@ export default function Nav() {
         <NavMenu>
             <Link to="/">Home</Link>
             <Link to="/skills">Skills</Link>
+            <Link to="/projects">Work</Link>
             <Link to="/github">GitHub</Link>
             <Link to="/resume">Resume</Link>
             <a target="_blank" href="http://twitter.com/alexlcooter">Twitter</a>

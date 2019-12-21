@@ -8,6 +8,7 @@ import Skills from "./components/Skills";
 import GitHub from "./components/GitHub";
 import Home from "./components/Home";
 import Nav from "./components/Nav";
+import Projects from "./components/Projects";
 
 const Container = styled.div`
   width: 100%;
@@ -57,6 +58,9 @@ function App() {
           </Route>
           <Route path="/github">
             <GitHub />
+          </Route>
+          <Route path="/projects">
+            <Projects />
           </Route>
         </div>
       </div>
