@@ -38,6 +38,11 @@ const Container = styled.div`
       padding: 4rem 5rem;
       width: 75%;
       border-top-right-radius: 0.5rem;
+
+      @media (max-width: 850px) {
+        padding: 4rem 3rem;
+        
+      }
     }
   }
 `;

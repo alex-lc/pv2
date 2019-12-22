@@ -23,6 +23,15 @@ const NavMenu = styled.div`
             background: #303030;
             color: #ffffff;
         }
+
+        @media (max-width: 850px) {
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        @media (max-width: 550px) {
+            font-size: 1.2rem;
+        }
     }
 `;
 
