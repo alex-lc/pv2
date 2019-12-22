@@ -33,9 +33,9 @@ export default function Nav() {
             <Link to="/">Home</Link>
             <Link to="/skills">Skills</Link>
             <Link to="/projects">Work</Link>
-            <Link to="/github">GitHub</Link>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/alex-lc">GitHub</a>
             <Link to="/resume">Resume</Link>
-            <a target="_blank" href="http://twitter.com/alexlcooter">Twitter</a>
+            <a target="_blank" rel="noopener noreferrer" href="http://twitter.com/alexlcooter">Twitter</a>
         </NavMenu>
     )
 }
