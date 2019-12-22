@@ -26,6 +26,10 @@ const Container = styled.div`
     border: 1px solid #1b1b5e;
     display: flex;
 
+    @media (max-width: 500px) {
+      width: 90%;
+    }
+
     .navigation {
       background: #363636;
       width: 25%;
@@ -40,8 +44,7 @@ const Container = styled.div`
       border-top-right-radius: 0.5rem;
 
       @media (max-width: 850px) {
-        padding: 4rem 3rem;
-        
+        padding: 4rem 3rem;     
       }
     }
   }
