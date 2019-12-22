@@ -19,6 +19,11 @@ const SkillsContainer = styled.div`
         width: 100%;
         display: flex;
         justify-content: center;
+
+        @media (max-width: 800px) {
+            flex-direction: column;
+            align-items: center;
+        }
     
         div {
             display: flex;
@@ -26,6 +31,7 @@ const SkillsContainer = styled.div`
             justify-content: center;
             align-items: center;
             width: 25%;
+            margin: 2rem 0;
     
             h3 {
                 font-size: 2rem;
