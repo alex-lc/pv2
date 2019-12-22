@@ -57,7 +57,7 @@ function App() {
         <div className="navigation">
           <Nav />
         </div>
-        <div class="routing">
+        <div className="routing">
           <Route exact path="/">
             <Home />
           </Route>
