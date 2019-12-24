@@ -19,7 +19,7 @@ const CardContainer = styled.div`
 
         @media (max-width: 800px) {
             flex-direction: column;
-            padding: 2rem 0.3rem;
+            padding: 2rem 0.2rem;
         }
     
         .title-links {
