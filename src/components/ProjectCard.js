@@ -19,6 +19,7 @@ const CardContainer = styled.div`
 
         @media (max-width: 800px) {
             flex-direction: column;
+            padding: 2rem 0.3rem;
         }
     
         .title-links {
@@ -111,6 +112,10 @@ const CardContainer = styled.div`
 
             p {
                 line-height: 2.5rem;
+
+                @media (max-width: 800px) {
+                    font-size: 1.2rem;
+                }
             }
         }
     }
