@@ -9,6 +9,7 @@ import GitHub from "./components/GitHub";
 import Home from "./components/Home";
 import Nav from "./components/Nav";
 import Projects from "./components/Projects";
+import Resume from "./components/Resume";
 
 const Container = styled.div`
   width: 100%;
@@ -69,6 +70,9 @@ function App() {
           </Route>
           <Route path="/projects">
             <Projects />
+          </Route>
+          <Route path="/resume">
+            <Resume />
           </Route>
         </div>
       </div>
