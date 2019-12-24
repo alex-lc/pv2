@@ -28,6 +28,14 @@ const CardContainer = styled.div`
                     transition: color 300ms;
                     color: #fafc68;
                 }
+
+                @media (max-width: 1200px) {
+                    font-size: 2rem;
+                }
+
+                @media (max-width: 1000px) {
+                    font-size: 1.4rem;
+                }
             }
 
             div {
@@ -39,6 +47,11 @@ const CardContainer = styled.div`
                 a {
                     margin: 1rem 0;
                     transition: all 300ms;
+
+                    @media (max-width: 1000px) {
+                        font-size: 1.2rem;
+                        textl-align: left;
+                    }
 
                     &:hover {
                         transition: color 300ms;
@@ -90,8 +103,8 @@ export default function ProjectCard(props) {
                 <div className="title-links">
                     <h2>{title}</h2>
                     <div>
-                        <a href={livePreview} target="_blank" rel="noopener noreferrer">Live Preview</a>
-                        <a href={github} target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                        <a href={livePreview} target="_blank" rel="noopener noreferrer">Preview</a>
+                        <a href={github} target="_blank" rel="noopener noreferrer">GitHub</a>
                     </div>
                 </div>
                 <div className="desc">
