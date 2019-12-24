@@ -16,10 +16,19 @@ const CardContainer = styled.div`
         display: flex;
         justify-content: space-evenly;
         width: 100%;
+
+        @media (max-width: 800px) {
+            flex-direction: column;
+        }
     
         .title-links {
             width: 20%;
             border-right: 1px solid #303030;
+
+            @media (max-width: 800px) {
+                width: 100%;
+                border-right: none;
+            }
 
             h2 {
                 transition: all 300ms;
@@ -36,6 +45,11 @@ const CardContainer = styled.div`
                 @media (max-width: 1000px) {
                     font-size: 1.4rem;
                 }
+
+                @media (max-width: 800px) {
+                    margin-bottom: 1rem;
+                    font-size: 2rem;
+                }
             }
 
             div {
@@ -43,6 +57,11 @@ const CardContainer = styled.div`
                 flex-direction: column;
                 text-align: center;
                 margin-top: 3rem;
+
+                @media (max-width: 800px) {
+                    margin-top: 0;
+                    border-bottom: 1px solid #303030;
+                }
 
                 a {
                     margin: 1rem 0;
@@ -77,6 +96,10 @@ const CardContainer = styled.div`
             padding: 1rem 2rem;
             width: 80%;
             font-weight: 200;
+
+            @media (max-width: 800px) {
+                width: 100%;
+            }
 
             div {
 
