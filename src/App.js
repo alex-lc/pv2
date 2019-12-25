@@ -27,8 +27,12 @@ const Container = styled.div`
     border: 1px solid #1b1b5e;
     display: flex;
 
+    @media (max-width: 800px) {
+      width: 85%;
+    }
+
     @media (max-width: 500px) {
-      width: 90%;
+      width: 95%;
     }
 
     .navigation {

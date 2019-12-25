@@ -27,6 +27,15 @@ const ResumeContainer = styled.div`
             line-height: 3rem;
             border-left: 2px solid #fafc68;
             padding-left: 3rem;
+
+            .insitution {
+                font-weight: 300;
+            }
+        }
+
+        .dates {
+            color: #fafc68;
+            font-weight: 300;
         }
     }
 
@@ -52,14 +61,19 @@ export default function Resume() {
                 <h3>Education: </h3>
                 <div>
                     <h4>Bachelor's of Arts in Information Technology</h4>
-                    <p>Stephen F. Austin State University</p>
-                    <p>2014 - 2018</p>
+                    <p className="insitution">Stephen F. Austin State University</p>
+                    <p className="dates">2014 - 2018</p>
                 </div>
             </div>
 
             <div className="work-history">
                 <h3>Work History: </h3>
-                <Job />
+                <Job
+                    title="Technical Support Assistant"
+                    company="School of Human Sciences at Stephen F. Austin State University"
+                    dates="2016 - 2018"
+                    desc="Provide technical support and assistnace to all faculty and staff members in the School of Human Sciences, and support
+                    and maintain all classroom equipment and technology." />
             </div>
         </ResumeContainer>
     )
