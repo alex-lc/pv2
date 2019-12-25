@@ -17,6 +17,7 @@ const NavMenu = styled.div`
         background: #363636;
         border-bottom: 1px solid #303030;
         transition: all 500ms;
+        font-weight: 200;
 
         &:hover {
             transition: background, color 500ms;

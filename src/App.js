@@ -15,16 +15,13 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  color: #fafafa;
+  color: #2e343b;
 
   .main-content {
     font-size: 1.4rem;
-    margin: 5% 0;
-    width: 75%;
-    background: #2b2b94;
-    border-radius: 0.5rem;
+    width: 100%;
+    background: #b5d0e8;
     min-height: 80vh;
-    border: 1px solid #1b1b5e;
     display: flex;
 
     @media (max-width: 800px) {
@@ -37,16 +34,18 @@ const Container = styled.div`
 
     .navigation {
       background: #363636;
-      width: 25%;
-      border-top-left-radius: 0.5rem;
+      width: 10%;
       border-right: 1px solid #303030;
       border-left: 1px solid #303030;
+      position: fixed;
+      height: 100%;
     }
 
     .routing {
       padding: 4rem 5rem;
       width: 75%;
       border-top-right-radius: 0.5rem;
+      margin-left: 10%;
 
       @media (max-width: 850px) {
         padding: 4rem 3rem;     
