@@ -7,6 +7,7 @@ const HomeContainer = styled.div`
         font-size: 3rem;
         font-weight: 200;
         margin-bottom: 2rem;
+        text-align: center;
 
         @media (max-width: 850px) {
             font-size: 2rem;
@@ -17,6 +18,7 @@ const HomeContainer = styled.div`
         font-size: 1.6rem;
         font-weight: 300;
         line-height: 3rem;
+        text-align: center;
 
         @media (max-width: 850px) {
             font-size: 1.4rem;
@@ -35,7 +37,7 @@ export default function Home() {
         <HomeContainer>
             <h1>Alexander Cooter</h1>
             <p>
-            Current full stack web development student in Lambda School. Graduated from Stephen F. Austin State University with a Bachelor's of Arts in Information Technology. Primary interest in cybersecurity, focused on web application security and penetration testing.
+                Hey there. I'm Alex.
             </p>
         </HomeContainer>
     )
