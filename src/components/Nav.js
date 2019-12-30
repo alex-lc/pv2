@@ -6,18 +6,23 @@ const NavMenu = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+
+    @media (max-width: 500px) {
+        flex-direction: row;
+    }
 
     a {
         color: #fafafa;
         width: 100%;
         text-transform: uppercase;
-        padding: 2rem 0 2rem 40%;
+        padding: 2rem 0;
         text-decoration: none;
         background: #363636;
         border-bottom: 1px solid #303030;
         transition: all 500ms;
         font-weight: 200;
+        text-align: center;
 
         &:hover {
             transition: background, color 500ms;
@@ -41,7 +46,6 @@ export default function Nav() {
     return (
         <NavMenu>
             <Link to="/">Home</Link>
-            <Link to="/skills">Skills</Link>
             <Link to="/projects">Work</Link>
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/alex-lc">GitHub</a>
             <Link to="/resume">Resume</Link>

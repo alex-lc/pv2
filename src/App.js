@@ -24,31 +24,40 @@ const Container = styled.div`
     min-height: 80vh;
     display: flex;
 
-    @media (max-width: 800px) {
-      width: 85%;
-    }
-
     @media (max-width: 500px) {
-      width: 95%;
+      flex-direction: column;
+      align-items: center;
     }
 
     .navigation {
       background: #363636;
-      width: 10%;
+      width: 15%;
       border-right: 1px solid #303030;
       border-left: 1px solid #303030;
       position: fixed;
       height: 100%;
+
+      @media (max-width: 500px) {
+        width: 100%;
+        height: 5rem;
+        border: none;
+      }
     }
 
     .routing {
       padding: 4rem 5rem;
       width: 75%;
       border-top-right-radius: 0.5rem;
-      margin-left: 10%;
+      margin-left: 15%;
 
       @media (max-width: 850px) {
         padding: 4rem 3rem;     
+      }
+
+      @media (max-width: 500px) {
+        width: 95%;
+        padding: 4rem 0;
+        margin-left: 0;
       }
     }
   }

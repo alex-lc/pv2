@@ -6,6 +6,15 @@ import Job from "./Job";
 
 const ResumeContainer = styled.div`
     font-weight: 200;
+    width: 100%;
+
+    @media (max-width: 500px) {
+        padding: 1rem;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     h2 {
         font-size: 2.4rem;
@@ -15,17 +24,23 @@ const ResumeContainer = styled.div`
 
     .education {
         margin-bottom: 4rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         h3 {
             font-size: 1.8rem;
             font-weight: 200;
-            color: #fafc68;
+            color: #705682;
             margin-bottom: 1rem;
+            width: 100%;
         }
 
         div {
+            width: 100%;
             line-height: 3rem;
-            border-left: 2px solid #fafc68;
+            border-left: 2px solid #705682;
             padding-left: 3rem;
 
             .insitution {
@@ -34,7 +49,7 @@ const ResumeContainer = styled.div`
         }
 
         .dates {
-            color: #fafc68;
+            color: #705682;
             font-weight: 300;
         }
     }
@@ -42,10 +57,16 @@ const ResumeContainer = styled.div`
     .work-history {
         margin-bottom: 2rem;
 
+        @media (max-width: 500px) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
         h3 {
             font-size: 1.8rem;
             font-weight: 200;
-            color: #fafc68;
+            color: #705682;
             margin-bottom: 1rem;
         }
     }

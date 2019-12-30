@@ -8,26 +8,20 @@ import html5Logo from '../assets/html5.svg';
 import css3Logo from '../assets/css3.svg';
 
 const SkillsContainer = styled.div`
-
-    h2 {
-        font-size: 2.4rem;
-        font-weight: 200;
-        
-        @media (max-width: 553px) {
-            font-size: 2rem;
-        }
-    }
     
     .container {
-        margin-top: 5rem;
+        margin-top: 1rem;
         width: 100%;
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        justify-items: center;
 
         @media (max-width: 800px) {
-            margin-top: 2rem;
-            flex-direction: column;
-            align-items: center;
+            grid-template-columns: 50% 50%;
+        }
+
+        @media (max-width: 400px) {
+            grid-template-columns: 100%;
         }
     
         div {
@@ -41,11 +35,11 @@ const SkillsContainer = styled.div`
             h3 {
                 font-size: 2rem;
                 font-weight: 200;
+                margin-top: 1rem;
             }
     
             img {
                 width: 9rem;
-                margin-bottom: 1rem;
                 transition: all 500ms;
     
                 &:hover {
@@ -61,7 +55,6 @@ export default function Skills() {
 
     return (
         <SkillsContainer>
-            <h2>Skills and Knowledge</h2>
             <div className="container">
                 <div>
                     <img src={reactLogo} alt='React.js Logo' />

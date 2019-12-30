@@ -2,9 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const JobContainer = styled.div`
-
         line-height: 3rem;
-        border-left: 2px solid #fafc68;
+        border-left: 2px solid #705682;
         padding-left: 3rem;
 
         h4 {
@@ -13,7 +12,7 @@ const JobContainer = styled.div`
 
         .dates {
             font-weight: 300;
-            color: #fafc68;
+            color: #705682;
         }
 `;
 
