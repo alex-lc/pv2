@@ -47,8 +47,9 @@ export default function Nav() {
         <NavMenu>
             <Link to="/">Home</Link>
             <Link to="/projects">Work</Link>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/alex-lc">GitHub</a>
             <Link to="/resume">Resume</Link>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/alex-lc">GitHub</a>
+            <a target="_blank" rel="noopener noreferrer" href="http://linkedin.com/in/alexander-cooter">LinkedIn</a>
             <a target="_blank" rel="noopener noreferrer" href="http://twitter.com/alexlcooter">Twitter</a>
         </NavMenu>
     )

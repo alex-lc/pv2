@@ -2,6 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import './App.css';
 import styled from 'styled-components';
+import { Helmet } from 'react-helmet';
 
 // components
 import Skills from "./components/Skills";
@@ -66,6 +67,12 @@ const Container = styled.div`
 function App() {
   return (
     <Container>
+      <Helmet>
+        <meta charset="utf-8" />
+        <meta name="description" content="Full Stack Web Development Team Lead and Student for Lambda School." />
+        <meta name="keywords" content="full stack web development, front end development, backend development, HTML5, CSS3, JavaScript, React, React.js, full stack web developer, alex cooter" />
+        <link rel="canonical" href="http://alexcooter.com" />
+      </Helmet>
       <div className="main-content">
         <div className="navigation">
           <Nav />
