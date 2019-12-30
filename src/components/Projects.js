@@ -13,7 +13,7 @@ const ProjectsContainer = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-left: 5%;
+        padding-left: 0;
     }
     
     h2 {
