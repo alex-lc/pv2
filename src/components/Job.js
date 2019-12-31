@@ -5,6 +5,7 @@ const JobContainer = styled.div`
         line-height: 3rem;
         border-left: 2px solid #705682;
         padding-left: 3rem;
+        margin-bottom: 2rem;
 
         h4 {
             font-weight: 300;

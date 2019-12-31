@@ -42,8 +42,9 @@ const ResumeContainer = styled.div`
             line-height: 3rem;
             border-left: 2px solid #705682;
             padding-left: 3rem;
+            margin-bottom: 2rem;
 
-            .insitution {
+            .institution {
                 font-weight: 300;
             }
         }
@@ -81,14 +82,27 @@ export default function Resume() {
             <div className="education">
                 <h3>Education: </h3>
                 <div>
+                    <h4>Full Stack Web Development</h4>
+                    <p className="institution">Lambda School</p>
+                    <p className="dates">2019 - Present</p>
+                </div>
+                <div>
                     <h4>Bachelor's of Arts in Information Technology</h4>
-                    <p className="insitution">Stephen F. Austin State University</p>
+                    <p className="institution">Stephen F. Austin State University</p>
                     <p className="dates">2014 - 2018</p>
                 </div>
             </div>
 
             <div className="work-history">
                 <h3>Work History: </h3>
+                <Job
+                    title="Part-Time Team Lead"
+                    company="Lambda School"
+                    dates="2019 - Present"
+                    desc="Mentor and guide a team of Lambda School students through previously completed 
+                    curriculum. As their first point of contact for support, Team Leads must also conduct 
+                    daily code reviews, one on one meetings reviewing projects and sprint challenges, as well as 
+                    team standup meetings." />
                 <Job
                     title="Technical Support Assistant"
                     company="School of Human Sciences at Stephen F. Austin State University"
