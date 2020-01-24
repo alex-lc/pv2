@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 // assets
 import reactLogo from '../assets/react.svg';
+import reduxLogo from '../assets/reduxLogo.svg';
 import jsLogo from '../assets/js.svg';
 import html5Logo from '../assets/html5.svg';
 import css3Logo from '../assets/css3.svg';
@@ -13,7 +14,7 @@ const SkillsContainer = styled.div`
         margin-top: 1rem;
         width: 100%;
         display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-columns: 33% 33% 33%;
         justify-items: center;
 
         @media (max-width: 800px) {
@@ -59,6 +60,10 @@ export default function Skills() {
                 <div>
                     <img src={reactLogo} alt='React.js Logo' />
                     <h3>React.js</h3>
+                </div>
+                <div>
+                    <img src={reduxLogo} alt='Redux Logo' />
+                    <h3>Redux</h3>
                 </div>
                 <div>
                     <img src={jsLogo} alt='JavaScript Logo' />

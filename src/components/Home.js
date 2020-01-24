@@ -12,14 +12,14 @@ const HomeContainer = styled.div`
     }
 
     h1 {
-        font-size: 4rem;
+        font-size: 5rem;
         font-weight: 200;
         text-align: center;
         color: #705682;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
 
         @media (max-width: 850px) {
-            font-size: 3rem;
+            font-size: 4rem;
         }
     }
 
