@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import reactLogo from '../assets/react.svg';
 import reduxLogo from '../assets/reduxLogo.svg';
 import jsLogo from '../assets/js.svg';
+import node from '../assets/node.svg';
 import html5Logo from '../assets/html5.svg';
 import css3Logo from '../assets/css3.svg';
 
@@ -68,6 +69,10 @@ export default function Skills() {
                 <div>
                     <img src={jsLogo} alt='JavaScript Logo' />
                     <h3>JavaScript</h3>
+                </div>
+                <div>
+                    <img src={node} alt="Node.js Logo" />
+                    <h3>Node.js</h3>
                 </div>
                 <div>
                     <img src={html5Logo} alt='HTML5 Logo' />

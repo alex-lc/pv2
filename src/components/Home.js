@@ -13,7 +13,7 @@ const HomeContainer = styled.div`
 
     h1 {
         font-size: 5rem;
-        font-weight: 200;
+        font-weight: 700;
         text-align: center;
         color: #705682;
         margin-bottom: 1rem;
@@ -25,7 +25,7 @@ const HomeContainer = styled.div`
 
     .small {
         margin-top: 0;
-        font-weight: 200;
+        font-weight: 500;
         font-size: 1.6rem;
     }
 
