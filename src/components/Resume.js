@@ -84,7 +84,7 @@ export default function Resume() {
                 <Job
                     title="Part-Time Team Lead"
                     company="Lambda School"
-                    dates="2019 - Present"
+                    dates="2019"
                     desc="Mentor and guide a team of Lambda School students through previously completed 
                     curriculum. As their first point of contact for support, Team Leads must also conduct 
                     daily code reviews, one on one meetings reviewing projects and sprint challenges, as well as 
