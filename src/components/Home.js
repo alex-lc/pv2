@@ -9,6 +9,7 @@ import Skills from './Skills';
 /* assets */
 import LifeGPA from '../assets/lifegpa.PNG';
 import PlantWise from '../assets/plantwise.png';
+import Raheem from '../assets/Raheem.PNG';
 import Next from '../assets/Next.svg';
 import Previous from '../assets/Previous.svg';
 
@@ -155,28 +156,35 @@ export default function Home() {
                 <h3>Recent Projects</h3>
                 <CarouselProvider
                     naturalSlideWidth={100}
-                    naturalSlideHeight={90}
+                    naturalSlideHeight={50}
                     totalSlides={3}
                     visibleSlides={1}
                 >
                     <Slider>
                         <Slide index={0}>
                             <div className="img-preview">
-                                <img src={PlantWise} alt="PlantWise" />
+                                <a target="_blank" rel="noopener noreferrer" href="https://master.d2qsd1m3f8a69k.amplifyapp.com/"><img src={Raheem} alt="Raheem" /></a>
+                            </div>
+                            <div className="project-desc">
+                                <p>Firebase, React.js, Context API, Styled-Components, react-router-dom</p>
+                            </div>
+                        </Slide>
+                        <Slide index={1}>
+                            <div className="img-preview">
+                                <a target="_blank" rel="noopener noreferrer" href="https://plantwise.netlify.app/"><img src={PlantWise} alt="PlantWise" /></a>
                             </div>
                             <div className="project-desc">
                                 <p>React.js, Context API, Styled-Components, react-router-dom</p>
                             </div>
                         </Slide>
-                        <Slide index={1}>
+                        <Slide index={2}>
                             <div className="img-preview">
-                                <img src={LifeGPA} alt="LifeGPA" />
+                                <a target="_blank" rel="noopener noreferrer" href="https://lifegpa-lambda.netlify.app/"><img src={LifeGPA} alt="LifeGPA" /></a>
                             </div>
                             <div className="project-desc">
                                 <p>JavaScript, CSS3, HTML5</p>
                             </div>
                         </Slide>
-                        <Slide index={2}>I am the third Slide.</Slide>
                     </Slider>
                     <div className="controls">
                         <ButtonBack><img src={Previous} alt="Previous" /></ButtonBack>

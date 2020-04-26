@@ -27,13 +27,19 @@ export default function Projects() {
     return (
         <ProjectsContainer>
             <h2>Previous Work and Projects</h2>
-
+            <ProjectCard
+                title="Raheem"
+                livePreview="https://master.d2qsd1m3f8a69k.amplifyapp.com/"
+                github="https://github.com/Lambda-School-Labs/raheem.org--fe"
+                desc="In Labs, I was one of the primary frontend developers tasked with streamlining Raheem's report system, as well as creating an officer dashboard to highlight user reports and bring awareness to police brutality to create safer communities."
+                tech="Firebase, React.js, Context API, styled-components, react-router-dom"
+            />
             <ProjectCard
                 title="PlantWise"
                 livePreview="https://plantwise.netlify.com"
                 github="https://github.com/Build-Week-WEB28-Water-My-Plants/frontend"
                 desc="In Build Week #3 of Lambda School, I served in the role of React II Developer and was in charge of the frontend. State management and CRUD operations interfacing with the backend API were my primary responsibilities, but I designed the UI as well using styled-components."
-                tech="Context API, React Hooks, React, styled-components, react-router-dom"
+                tech="Context API, React Hooks, React.js, styled-components, react-router-dom"
             />
             <ProjectCard
                 title="LifeGPA"
